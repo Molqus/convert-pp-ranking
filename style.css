@@ -12,7 +12,7 @@ td {
   border: 1px solid #ccc;
 }
 
-tbody tr:nth-child(odd) {
+table.bp tbody tr:nth-child(odd) {
   background: #eee;
 }
 /*
@@ -22,4 +22,19 @@ tbody tr:nth-child(odd) {
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.user_search_text {
+  border: 1px solid #ddd;
+  padding: 0.25rem;
+}
+
+input[type="button"] {
+  border: solid 1px #333;
+  padding: 0.25rem;
+  background-color: rgb(240, 240, 240);
 }
