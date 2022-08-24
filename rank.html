@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -18,11 +18,94 @@ convert pp ranking</title>
 <p>Doesn't include bonus pp.</p>
 <p>Doesn't include Loved maps.</p>
 <p>Click someone's name to see his top ranks.</p>
-<p>Updated:2022-08-24 00:44:04 UTC+0</p>
+<p>Updated:2022-08-24 22:43:32 UTC+0</p>
 <p>(collected scores until the end of July 2022)</p>
-<input class="user_search_text" type="text" placeholder="search by username...">
-<input class="user_search_button" type="button" value="search">
-<input class="reset" type="button" value="clear search result">
+<div class="search_field">
+  <input class="user_search_text" type="text" placeholder="search by username...">
+  <input class="user_search_button" type="button" value="search">
+</div>
+<div class="search_field">
+  <label for="country_ranking">filter by country:</label>
+  <select id="country_ranking">
+    <option value="all" selected>all country</option>
+    <option value="Algeria">Algeria</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Australia">Australia</option>
+    <option value="Austria">Austria</option>
+    <option value="Belarus">Belarus</option>
+    <option value="Belgium">Belgium</option>
+    <option value="Bolivia">Bolivia</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Bulgaria">Bulgaria</option>
+    <option value="Canada">Canada</option>
+    <option value="Chile">Chile</option>
+    <option value="China">China</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Costa Rica">Costa Rica</option>
+    <option value="Croatia">Croatia</option>
+    <option value="Czech Republic">Czech Republic</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Dominican Republic">Dominican Republic</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="El Salvador">El Salvador</option>
+    <option value="Estonia">Estonia</option>
+    <option value="Finland">Finland</option>
+    <option value="France">France</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Germany">Germany</option>
+    <option value="Greece">Greece</option>
+    <option value="Guatemala">Guatemala</option>
+    <option value="Honduras">Honduras</option>
+    <option value="Hong Kong">Hong Kong</option>
+    <option value="Hungary">Hungary</option>
+    <option value="Iceland">Iceland</option>
+    <option value="Indonesia">Indonesia</option>
+    <option value="Iraq">Iraq</option>
+    <option value="Israel">Israel</option>
+    <option value="Italy">Italy</option>
+    <option value="Jamaica">Jamaica</option>
+    <option value="Japan">Japan</option>
+    <option value="Kazakhstan">Kazakhstan</option>
+    <option value="Latvia">Latvia</option>
+    <option value="Lithuania">Lithuania</option>
+    <option value="Malaysia">Malaysia</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Morocco">Morocco</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="Nicaragua">Nicaragua</option>
+    <option value="Norway">Norway</option>
+    <option value="Oman">Oman</option>
+    <option value="Panama">Panama</option>
+    <option value="Peru">Peru</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Poland">Poland</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Puerto Rico">Puerto Rico</option>
+    <option value="Romania">Romania</option>
+    <option value="Russia">Russia</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="Singapore">Singapore</option>
+    <option value="South Korea">South Korea</option>
+    <option value="Spain">Spain</option>
+    <option value="Sweden">Sweden</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Taiwan">Taiwan</option>
+    <option value="Thailand">Thailand</option>
+    <option value="Tunisia">Tunisia</option>
+    <option value="Turkey">Turkey</option>
+    <option value="Ukraine">Ukraine</option>
+    <option value="United Arab Emirates">United Arab Emirates</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="United States">United States</option>
+    <option value="Uruguay">Uruguay</option>
+    <option value="Venezuela">Venezuela</option>
+    <option value="Vietnam">Vietnam</option>
+  </select>
+</div>
+<div class="search_field">
+  <input class="reset" type="button" value="clear search result">
+</div>
 <div class="ranking-wrapper">
   <table>
     <thead>
@@ -11062,6 +11145,22 @@ convert pp ranking</title>
 
     $(".reset").on("click", () => {
       resetTable();
+      $("#country_ranking").val("all");
+    });
+
+    $("#country_ranking").on("change", () => {
+      const selected_country = $("#country_ranking").val();
+      if (selected_country === "all") {
+        resetTable();
+      } else {
+        $("tbody tr").each((i, e) => {
+          if ($(e).attr("class") === selected_country) {
+            $(e).show();
+          } else {
+            $(e).hide();
+          }
+        });
+      }
     });
   });
 </script>

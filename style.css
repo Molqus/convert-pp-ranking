@@ -38,3 +38,13 @@ input[type="button"] {
   padding: 0.25rem;
   background-color: rgb(240, 240, 240);
 }
+
+#country_ranking {
+  border: 1px grey solid;
+  padding: 0.25rem;
+  -webkit-appearance: auto;
+}
+
+.search_field {
+  margin: 6px 0;
+}
