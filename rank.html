@@ -7123,6 +7123,10 @@ convert pp ranking</title>
   </body>
 <script>
   "use strict";
+  window.addEventListener('pageshow', () => {
+    $("#country_ranking").val("all");
+    $(".user_search_text").val("");
+  });
   $(() => {
     const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const resetTable = () => $("tr").show();
