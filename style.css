@@ -12,7 +12,7 @@ td {
   border: 1px solid #ccc;
 }
 
-table.bp tbody tr:nth-child(odd) {
+table.bp tr:nth-child(odd) {
   background: #eee;
 }
 /*
@@ -28,7 +28,7 @@ table.bp tbody tr:nth-child(odd) {
   text-align: center;
 }
 
-.user_search_text {
+#user_search_text {
   border: 1px solid #ddd;
   padding: 0.25rem;
 }
@@ -51,4 +51,8 @@ input[type="button"] {
 
 .recent {
   background: deepskyblue!important;
+}
+
+.hide {
+  display: none;
 }

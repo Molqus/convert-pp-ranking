@@ -19,12 +19,12 @@ convert pp ranking</title>
 <p>Doesn't include Loved maps.</p>
 <p>If player has multiple scores on the same map, only the highest pp play is used for calculation.</p>
 <p>Click someone's name to see his top ranks.</p>
-<p>Updated:2022-09-02 12:34:29 UTC+0</p>
+<p>Updated:2022-09-02 20:12:01 UTC+0 (small performance improvement, not data update)</p>
 <p>Collected scores until the end of August 2022.</p>
 <p><b>Note I'm using monthly dump data so this ranking won't be updated frequently.</b></p>
 <div class="search_field">
-  <input class="user_search_text" type="text" placeholder="Search by username...">
-  <input class="user_search_button" type="button" value="search">
+  <input id="user_search_text" type="text" placeholder="Search by username...">
+  <input id="user_search_button" type="button" value="search">
   <span>(Case-insensitive)</span>
 </div>
 <div class="search_field">
@@ -124,9 +124,9 @@ convert pp ranking</title>
   </select>
 </div>
 <div class="search_field">
-  <input class="reset" type="button" value="Clear search result">
+  <input id="reset" type="button" value="Clear search result">
 </div>
-<div class="ranking-wrapper">
+<div id="ranking-wrapper">
   <table>
     <thead>
       <tr>
@@ -14145,32 +14145,34 @@ convert pp ranking</title>
   "use strict";
   window.addEventListener('pageshow', () => {
     $("#country_ranking").val("all");
-    $(".user_search_text").val("");
+    $("#user_search_text").val("");
   });
   $(() => {
     const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const resetTable = () => $("tr").show();
+    const resetTable = () => $("tr").removeClass('hide');
     let isFiltered = false;
-    $(".user_search_button").on("click", () => {
+    $("#user_search_button").on("click", () => {
       if(isFiltered) {
         resetTable();
       }
-      const search_text = $(".user_search_text").val();
-      $(".user_name a").each((i, e) => {
-        const val = $(e).text().toUpperCase();
+      const search_text = $("#user_search_text").val();
+      $(".user_name a").each((_, e) => {
+        const user_elem = $(e);
+        const user_parent = user_elem.closest("tr");
+        const val = user_elem.text().toUpperCase();
         if (val.match(escapeRegExp(search_text.toUpperCase()))) {
-          $(e).closest("tr").show();
+          user_parent.removeClass('hide');
         } else {
-          $(e).closest("tr").hide();
+          user_parent.addClass('hide');
         }
       });
       isFiltered = true;
     });
 
-    $(".reset").on("click", () => {
+    $("#reset").on("click", () => {
       resetTable();
       $("#country_ranking").val("all");
-      $(".user_search_text").val("");
+      $("#user_search_text").val("");
     });
 
     $("#country_ranking").on("change", () => {
@@ -14178,11 +14180,12 @@ convert pp ranking</title>
       if (selected_country === "all") {
         resetTable();
       } else {
-        $("tbody tr").each((i, e) => {
-          if ($(e).attr("class") === selected_country) {
-            $(e).show();
+        $("tbody tr").each((_, e) => {
+          const user_row = $(e);
+          if (user_row.attr("class") === selected_country) {
+            user_row.removeClass('hide');
           } else {
-            $(e).hide();
+            user_row.addClass('hide');
           }
         });
       }
