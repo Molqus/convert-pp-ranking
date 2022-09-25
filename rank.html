@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 <link rel="stylesheet" href="style.css">
 <script
@@ -19,7 +20,7 @@ convert pp ranking</title>
 <p>Doesn't include Loved maps.</p>
 <p>If player has multiple scores on the same map, only the highest pp play is used for calculation.</p>
 <p>Click someone's name to see his top ranks.</p>
-<p>Updated:2022-09-02 20:12:01 UTC+0 (small performance improvement, not data update)</p>
+<p>Updated:2022-09-25 23:18:48 UTC+0 (some bug fixes/adjustments, not data update)</p>
 <p>Collected scores until the end of August 2022.</p>
 <p><b>Note I'm using monthly dump data so this ranking won't be updated frequently.</b></p>
 <div class="search_field">
@@ -40,7 +41,7 @@ convert pp ranking</title>
     <option value="Belgium">Belgium</option>
     <option value="Bhutan">Bhutan</option>
     <option value="Bolivia">Bolivia</option>
-    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+    <option value="Bosnia_and_Herzegovina">Bosnia and Herzegovina</option>
     <option value="Brazil">Brazil</option>
     <option value="Bulgaria">Bulgaria</option>
     <option value="Cambodia">Cambodia</option>
@@ -48,14 +49,14 @@ convert pp ranking</title>
     <option value="Chile">Chile</option>
     <option value="China">China</option>
     <option value="Colombia">Colombia</option>
-    <option value="Costa Rica">Costa Rica</option>
+    <option value="Costa_Rica">Costa Rica</option>
     <option value="Croatia">Croatia</option>
-    <option value="Czech Republic">Czech Republic</option>
+    <option value="Czech_Republic">Czech Republic</option>
     <option value="Denmark">Denmark</option>
-    <option value="Dominican Republic">Dominican Republic</option>
+    <option value="Dominican_Republic">Dominican Republic</option>
     <option value="Ecuador">Ecuador</option>
     <option value="Egypt">Egypt</option>
-    <option value="El Salvador">El Salvador</option>
+    <option value="El_Salvador">El Salvador</option>
     <option value="Estonia">Estonia</option>
     <option value="Finland">Finland</option>
     <option value="France">France</option>
@@ -64,7 +65,7 @@ convert pp ranking</title>
     <option value="Greece">Greece</option>
     <option value="Guatemala">Guatemala</option>
     <option value="Honduras">Honduras</option>
-    <option value="Hong Kong">Hong Kong</option>
+    <option value="Hong_Kong">Hong Kong</option>
     <option value="Hungary">Hungary</option>
     <option value="Iceland">Iceland</option>
     <option value="Indonesia">Indonesia</option>
@@ -86,8 +87,8 @@ convert pp ranking</title>
     <option value="Moldova">Moldova</option>
     <option value="Morocco">Morocco</option>
     <option value="Netherlands">Netherlands</option>
-    <option value="New Caledonia">New Caledonia</option>
-    <option value="New Zealand">New Zealand</option>
+    <option value="New_Caledonia">New Caledonia</option>
+    <option value="New_Zealand">New Zealand</option>
     <option value="Nicaragua">Nicaragua</option>
     <option value="Norway">Norway</option>
     <option value="Oman">Oman</option>
@@ -96,15 +97,15 @@ convert pp ranking</title>
     <option value="Philippines">Philippines</option>
     <option value="Poland">Poland</option>
     <option value="Portugal">Portugal</option>
-    <option value="Puerto Rico">Puerto Rico</option>
+    <option value="Puerto_Rico">Puerto Rico</option>
     <option value="Romania">Romania</option>
     <option value="Russia">Russia</option>
-    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="Saudi_Arabia">Saudi Arabia</option>
     <option value="Serbia">Serbia</option>
     <option value="Singapore">Singapore</option>
     <option value="Slovakia">Slovakia</option>
     <option value="Slovenia">Slovenia</option>
-    <option value="South Korea">South Korea</option>
+    <option value="South_Korea">South Korea</option>
     <option value="Spain">Spain</option>
     <option value="Sweden">Sweden</option>
     <option value="Switzerland">Switzerland</option>
@@ -113,14 +114,14 @@ convert pp ranking</title>
     <option value="Tunisia">Tunisia</option>
     <option value="Turkey">Turkey</option>
     <option value="Ukraine">Ukraine</option>
-    <option value="United Arab Emirates">United Arab Emirates</option>
-    <option value="United Kingdom">United Kingdom</option>
-    <option value="United States">United States</option>
+    <option value="United_Arab_Emirates">United Arab Emirates</option>
+    <option value="United_Kingdom">United Kingdom</option>
+    <option value="United_States">United States</option>
     <option value="Uruguay">Uruguay</option>
     <option value="Uzbekistan">Uzbekistan</option>
     <option value="Venezuela">Venezuela</option>
     <option value="Vietnam">Vietnam</option>
-    <option value="Åland Islands">Åland Islands</option>
+    <option value="Åland_Islands">Åland Islands</option>
   </select>
 </div>
 <div class="search_field">
@@ -131,7 +132,7 @@ convert pp ranking</title>
     <thead>
       <tr>
         <th class="text-left">#</th>
-        <th>Name</th>
+        <th id="user_name_head">Name</th>
         <th>PP</th>
       </tr>
     </thead>
@@ -143,21 +144,21 @@ convert pp ranking</title>
         </td>
         <td>12746.83</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>2</td>
         <td class="user_name">
           <a href="users/2660111.html">SHK</a>
         </td>
         <td>12104.71</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>3</td>
         <td class="user_name">
           <a href="users/214187.html">ExGon</a>
         </td>
         <td>11840.67</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>4</td>
         <td class="user_name">
           <a href="users/3885626.html">Motion</a>
@@ -171,28 +172,28 @@ convert pp ranking</title>
         </td>
         <td>10754.68</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>6</td>
         <td class="user_name">
           <a href="users/7226149.html">Lexii</a>
         </td>
         <td>10736.03</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>7</td>
         <td class="user_name">
           <a href="users/3097304.html">Abstract-</a>
         </td>
         <td>10435.53</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>8</td>
         <td class="user_name">
           <a href="users/7547506.html">qwhj1027</a>
         </td>
         <td>10258.03</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>9</td>
         <td class="user_name">
           <a href="users/4365562.html">rostld</a>
@@ -241,14 +242,14 @@ convert pp ranking</title>
         </td>
         <td>9374.54</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>16</td>
         <td class="user_name">
           <a href="users/2754651.html">Byeol</a>
         </td>
         <td>9289.89</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>17</td>
         <td class="user_name">
           <a href="users/1808057.html">DreStar</a>
@@ -290,7 +291,7 @@ convert pp ranking</title>
         </td>
         <td>8923.47</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>23</td>
         <td class="user_name">
           <a href="users/702598.html">Spectator</a>
@@ -304,14 +305,14 @@ convert pp ranking</title>
         </td>
         <td>8842.68</td>
       </tr>
-      <tr class="Saudi Arabia">
+      <tr class="Saudi_Arabia">
         <td>25</td>
         <td class="user_name">
           <a href="users/448547.html">RAMPAGE88</a>
         </td>
         <td>8797.57</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>26</td>
         <td class="user_name">
           <a href="users/3657951.html">JISAN</a>
@@ -381,7 +382,7 @@ convert pp ranking</title>
         </td>
         <td>8485.08</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>36</td>
         <td class="user_name">
           <a href="users/7937519.html">Rells</a>
@@ -395,7 +396,7 @@ convert pp ranking</title>
         </td>
         <td>8373.89</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>38</td>
         <td class="user_name">
           <a href="users/2306637.html">Secre</a>
@@ -416,7 +417,7 @@ convert pp ranking</title>
         </td>
         <td>8228.76</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>41</td>
         <td class="user_name">
           <a href="users/9155988.html">AutoLs</a>
@@ -444,14 +445,14 @@ convert pp ranking</title>
         </td>
         <td>8126.48</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>45</td>
         <td class="user_name">
           <a href="users/2996241.html">Del</a>
         </td>
         <td>8093.12</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>46</td>
         <td class="user_name">
           <a href="users/4158549.html">YesMyDarknesss</a>
@@ -514,14 +515,14 @@ convert pp ranking</title>
         </td>
         <td>7955.97</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>55</td>
         <td class="user_name">
           <a href="users/1311496.html">Suigetsu Kyouka</a>
         </td>
         <td>7929.38</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>56</td>
         <td class="user_name">
           <a href="users/566276.html">Rocma</a>
@@ -535,14 +536,14 @@ convert pp ranking</title>
         </td>
         <td>7923.84</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>58</td>
         <td class="user_name">
           <a href="users/3962365.html">zelatra</a>
         </td>
         <td>7857.46</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>59</td>
         <td class="user_name">
           <a href="users/2815946.html">DxNightwave</a>
@@ -563,7 +564,7 @@ convert pp ranking</title>
         </td>
         <td>7825.09</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>62</td>
         <td class="user_name">
           <a href="users/4080520.html">T s u m i</a>
@@ -598,14 +599,14 @@ convert pp ranking</title>
         </td>
         <td>7680.24</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>67</td>
         <td class="user_name">
           <a href="users/500696.html">quirky player</a>
         </td>
         <td>7672.50</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>68</td>
         <td class="user_name">
           <a href="users/636114.html">autofanboy</a>
@@ -633,7 +634,7 @@ convert pp ranking</title>
         </td>
         <td>7650.16</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>72</td>
         <td class="user_name">
           <a href="users/2427813.html">iiyo</a>
@@ -675,7 +676,7 @@ convert pp ranking</title>
         </td>
         <td>7573.66</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>78</td>
         <td class="user_name">
           <a href="users/3313041.html">[224]Reol</a>
@@ -780,21 +781,21 @@ convert pp ranking</title>
         </td>
         <td>7353.27</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>93</td>
         <td class="user_name">
           <a href="users/2165558.html">Playboy</a>
         </td>
         <td>7336.11</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>94</td>
         <td class="user_name">
           <a href="users/5163523.html">Novoids</a>
         </td>
         <td>7327.67</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>95</td>
         <td class="user_name">
           <a href="users/1459769.html">mjj741</a>
@@ -822,7 +823,7 @@ convert pp ranking</title>
         </td>
         <td>7271.08</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>99</td>
         <td class="user_name">
           <a href="users/485474.html">Ken Doll</a>
@@ -899,7 +900,7 @@ convert pp ranking</title>
         </td>
         <td>7219.96</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>110</td>
         <td class="user_name">
           <a href="users/2213794.html">Kowaii_ne</a>
@@ -962,14 +963,14 @@ convert pp ranking</title>
         </td>
         <td>7122.10</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>119</td>
         <td class="user_name">
           <a href="users/1391036.html">[Amazing]</a>
         </td>
         <td>7114.93</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>120</td>
         <td class="user_name">
           <a href="users/5257769.html">FABninja</a>
@@ -1039,7 +1040,7 @@ convert pp ranking</title>
         </td>
         <td>7014.49</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>130</td>
         <td class="user_name">
           <a href="users/4316266.html">Snowless</a>
@@ -1123,7 +1124,7 @@ convert pp ranking</title>
         </td>
         <td>6839.39</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>142</td>
         <td class="user_name">
           <a href="users/5502521.html">Colin</a>
@@ -1137,7 +1138,7 @@ convert pp ranking</title>
         </td>
         <td>6817.76</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>144</td>
         <td class="user_name">
           <a href="users/6049302.html">Elusion</a>
@@ -1242,7 +1243,7 @@ convert pp ranking</title>
         </td>
         <td>6716.76</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>159</td>
         <td class="user_name">
           <a href="users/1226238.html">Latifah-sama</a>
@@ -1298,7 +1299,7 @@ convert pp ranking</title>
         </td>
         <td>6657.04</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>167</td>
         <td class="user_name">
           <a href="users/2253026.html">DevilFace</a>
@@ -1389,7 +1390,7 @@ convert pp ranking</title>
         </td>
         <td>6570.77</td>
       </tr>
-      <tr class="Costa Rica">
+      <tr class="Costa_Rica">
         <td>180</td>
         <td class="user_name">
           <a href="users/2407347.html">Gersonfull</a>
@@ -1424,14 +1425,14 @@ convert pp ranking</title>
         </td>
         <td>6541.58</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>185</td>
         <td class="user_name">
           <a href="users/1375955.html">Zak</a>
         </td>
         <td>6534.08</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>186</td>
         <td class="user_name">
           <a href="users/6061501.html">wordmaster</a>
@@ -1445,7 +1446,7 @@ convert pp ranking</title>
         </td>
         <td>6527.01</td>
       </tr>
-      <tr class="Costa Rica">
+      <tr class="Costa_Rica">
         <td>188</td>
         <td class="user_name">
           <a href="users/4430631.html">sovy</a>
@@ -1473,7 +1474,7 @@ convert pp ranking</title>
         </td>
         <td>6500.32</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>192</td>
         <td class="user_name">
           <a href="users/2697988.html">jongwon12</a>
@@ -1487,7 +1488,7 @@ convert pp ranking</title>
         </td>
         <td>6474.13</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>194</td>
         <td class="user_name">
           <a href="users/1830213.html">Clara</a>
@@ -1585,7 +1586,7 @@ convert pp ranking</title>
         </td>
         <td>6371.74</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>208</td>
         <td class="user_name">
           <a href="users/788406.html">CheungB</a>
@@ -1599,7 +1600,7 @@ convert pp ranking</title>
         </td>
         <td>6365.11</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>210</td>
         <td class="user_name">
           <a href="users/1686145.html">Len</a>
@@ -1746,7 +1747,7 @@ convert pp ranking</title>
         </td>
         <td>6228.45</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>231</td>
         <td class="user_name">
           <a href="users/531253.html">CLSW</a>
@@ -1767,7 +1768,7 @@ convert pp ranking</title>
         </td>
         <td>6192.19</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>234</td>
         <td class="user_name">
           <a href="users/16352736.html">bigh</a>
@@ -1802,14 +1803,14 @@ convert pp ranking</title>
         </td>
         <td>6145.27</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>239</td>
         <td class="user_name">
           <a href="users/4786306.html">Lovefool</a>
         </td>
         <td>6122.19</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>240</td>
         <td class="user_name">
           <a href="users/2349880.html">Keine</a>
@@ -1830,7 +1831,7 @@ convert pp ranking</title>
         </td>
         <td>6105.76</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>243</td>
         <td class="user_name">
           <a href="users/13978275.html">ChewyTarTar</a>
@@ -1872,7 +1873,7 @@ convert pp ranking</title>
         </td>
         <td>6049.61</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>249</td>
         <td class="user_name">
           <a href="users/4067115.html">Matt_H</a>
@@ -1886,7 +1887,7 @@ convert pp ranking</title>
         </td>
         <td>6036.88</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>251</td>
         <td class="user_name">
           <a href="users/2693723.html">Adeus</a>
@@ -1900,7 +1901,7 @@ convert pp ranking</title>
         </td>
         <td>6028.56</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>253</td>
         <td class="user_name">
           <a href="users/14796012.html">Rabbie</a>
@@ -1928,7 +1929,7 @@ convert pp ranking</title>
         </td>
         <td>6014.64</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>257</td>
         <td class="user_name">
           <a href="users/643160.html">NekoMiMi</a>
@@ -1949,7 +1950,7 @@ convert pp ranking</title>
         </td>
         <td>6010.25</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>260</td>
         <td class="user_name">
           <a href="users/1985428.html">Miharu</a>
@@ -2005,7 +2006,7 @@ convert pp ranking</title>
         </td>
         <td>5966.47</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>268</td>
         <td class="user_name">
           <a href="users/6233826.html">TheFlameWind</a>
@@ -2061,7 +2062,7 @@ convert pp ranking</title>
         </td>
         <td>5944.39</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>276</td>
         <td class="user_name">
           <a href="users/6715645.html">Digitalfear117</a>
@@ -2110,7 +2111,7 @@ convert pp ranking</title>
         </td>
         <td>5916.73</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>283</td>
         <td class="user_name">
           <a href="users/3035276.html">maxqw123</a>
@@ -2215,7 +2216,7 @@ convert pp ranking</title>
         </td>
         <td>5867.70</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>298</td>
         <td class="user_name">
           <a href="users/4637369.html">Petit</a>
@@ -2285,7 +2286,7 @@ convert pp ranking</title>
         </td>
         <td>5783.80</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>308</td>
         <td class="user_name">
           <a href="users/13854.html">HineX</a>
@@ -2320,21 +2321,21 @@ convert pp ranking</title>
         </td>
         <td>5742.02</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>313</td>
         <td class="user_name">
           <a href="users/3692648.html">Kisetsunotori</a>
         </td>
         <td>5740.73</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>314</td>
         <td class="user_name">
           <a href="users/6926006.html">Dahcreeper</a>
         </td>
         <td>5728.19</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>315</td>
         <td class="user_name">
           <a href="users/5928207.html">xMakron</a>
@@ -2404,14 +2405,14 @@ convert pp ranking</title>
         </td>
         <td>5663.13</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>325</td>
         <td class="user_name">
           <a href="users/670365.html">Frobe</a>
         </td>
         <td>5660.52</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>326</td>
         <td class="user_name">
           <a href="users/2086828.html">I CAN FC</a>
@@ -2467,7 +2468,7 @@ convert pp ranking</title>
         </td>
         <td>5623.95</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>334</td>
         <td class="user_name">
           <a href="users/568941.html">GuruK</a>
@@ -2481,7 +2482,7 @@ convert pp ranking</title>
         </td>
         <td>5620.29</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>336</td>
         <td class="user_name">
           <a href="users/137620.html">Himitsu-</a>
@@ -2656,7 +2657,7 @@ convert pp ranking</title>
         </td>
         <td>5480.01</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>361</td>
         <td class="user_name">
           <a href="users/2565109.html">Loli_Remilia</a>
@@ -2684,7 +2685,7 @@ convert pp ranking</title>
         </td>
         <td>5470.45</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>365</td>
         <td class="user_name">
           <a href="users/1978891.html">Yami Shoujo</a>
@@ -2747,7 +2748,7 @@ convert pp ranking</title>
         </td>
         <td>5443.92</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>374</td>
         <td class="user_name">
           <a href="users/1784164.html">SakaNaz</a>
@@ -2775,7 +2776,7 @@ convert pp ranking</title>
         </td>
         <td>5442.24</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>378</td>
         <td class="user_name">
           <a href="users/17405762.html">-Zellen</a>
@@ -2789,7 +2790,7 @@ convert pp ranking</title>
         </td>
         <td>5441.47</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>380</td>
         <td class="user_name">
           <a href="users/1302259.html">Last Bubble</a>
@@ -2824,7 +2825,7 @@ convert pp ranking</title>
         </td>
         <td>5415.45</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>385</td>
         <td class="user_name">
           <a href="users/4598862.html">Tyrell</a>
@@ -2838,7 +2839,7 @@ convert pp ranking</title>
         </td>
         <td>5409.34</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>387</td>
         <td class="user_name">
           <a href="users/4044289.html">Olib</a>
@@ -2859,7 +2860,7 @@ convert pp ranking</title>
         </td>
         <td>5406.30</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>390</td>
         <td class="user_name">
           <a href="users/6693897.html">uloo</a>
@@ -2950,7 +2951,7 @@ convert pp ranking</title>
         </td>
         <td>5356.05</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>403</td>
         <td class="user_name">
           <a href="users/24991702.html">pmpm</a>
@@ -2971,7 +2972,7 @@ convert pp ranking</title>
         </td>
         <td>5348.26</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>406</td>
         <td class="user_name">
           <a href="users/4625004.html">eXio</a>
@@ -2992,7 +2993,7 @@ convert pp ranking</title>
         </td>
         <td>5318.25</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>409</td>
         <td class="user_name">
           <a href="users/2194368.html">yaityboi</a>
@@ -3006,7 +3007,7 @@ convert pp ranking</title>
         </td>
         <td>5314.14</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>411</td>
         <td class="user_name">
           <a href="users/367756.html">Perfect Day</a>
@@ -3139,7 +3140,7 @@ convert pp ranking</title>
         </td>
         <td>5253.67</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>430</td>
         <td class="user_name">
           <a href="users/4538783.html">Doom-</a>
@@ -3167,7 +3168,7 @@ convert pp ranking</title>
         </td>
         <td>5236.48</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>434</td>
         <td class="user_name">
           <a href="users/1368780.html">Pikicast</a>
@@ -3195,7 +3196,7 @@ convert pp ranking</title>
         </td>
         <td>5228.76</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>438</td>
         <td class="user_name">
           <a href="users/1913190.html">Sorceress</a>
@@ -3209,7 +3210,7 @@ convert pp ranking</title>
         </td>
         <td>5225.32</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>440</td>
         <td class="user_name">
           <a href="users/16457228.html">_Haven_</a>
@@ -3244,7 +3245,7 @@ convert pp ranking</title>
         </td>
         <td>5204.78</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>445</td>
         <td class="user_name">
           <a href="users/233667.html">Berncastell</a>
@@ -3300,14 +3301,14 @@ convert pp ranking</title>
         </td>
         <td>5169.34</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>453</td>
         <td class="user_name">
           <a href="users/11111361.html">zachub03</a>
         </td>
         <td>5165.53</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>454</td>
         <td class="user_name">
           <a href="users/4224529.html">Hilda</a>
@@ -3321,7 +3322,7 @@ convert pp ranking</title>
         </td>
         <td>5161.32</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>456</td>
         <td class="user_name">
           <a href="users/5261202.html">R E C</a>
@@ -3405,7 +3406,7 @@ convert pp ranking</title>
         </td>
         <td>5119.69</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>468</td>
         <td class="user_name">
           <a href="users/1900093.html">Rain Maker</a>
@@ -3433,7 +3434,7 @@ convert pp ranking</title>
         </td>
         <td>5111.24</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>472</td>
         <td class="user_name">
           <a href="users/3784334.html">UY Scuti</a>
@@ -3566,7 +3567,7 @@ convert pp ranking</title>
         </td>
         <td>5047.91</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>491</td>
         <td class="user_name">
           <a href="users/1360885.html">Nyong</a>
@@ -3580,7 +3581,7 @@ convert pp ranking</title>
         </td>
         <td>5044.83</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>493</td>
         <td class="user_name">
           <a href="users/1123320.html">fbdp1202</a>
@@ -3671,14 +3672,14 @@ convert pp ranking</title>
         </td>
         <td>5006.03</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>506</td>
         <td class="user_name">
           <a href="users/4564521.html">Nealth</a>
         </td>
         <td>5003.13</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>507</td>
         <td class="user_name">
           <a href="users/2712863.html">Rextep</a>
@@ -3699,7 +3700,7 @@ convert pp ranking</title>
         </td>
         <td>4988.86</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>510</td>
         <td class="user_name">
           <a href="users/584093.html">Ikillforpies</a>
@@ -3720,7 +3721,7 @@ convert pp ranking</title>
         </td>
         <td>4984.00</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>513</td>
         <td class="user_name">
           <a href="users/3768185.html">Lay</a>
@@ -3790,7 +3791,7 @@ convert pp ranking</title>
         </td>
         <td>4924.20</td>
       </tr>
-      <tr class="Dominican Republic">
+      <tr class="Dominican_Republic">
         <td>523</td>
         <td class="user_name">
           <a href="users/7614446.html">Yeuryx2</a>
@@ -3811,7 +3812,7 @@ convert pp ranking</title>
         </td>
         <td>4915.35</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>526</td>
         <td class="user_name">
           <a href="users/7293637.html">-Zariel</a>
@@ -3839,7 +3840,7 @@ convert pp ranking</title>
         </td>
         <td>4900.65</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>530</td>
         <td class="user_name">
           <a href="users/4209402.html">Martin22</a>
@@ -3853,7 +3854,7 @@ convert pp ranking</title>
         </td>
         <td>4896.12</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>532</td>
         <td class="user_name">
           <a href="users/728934.html">Nico Nico Douga</a>
@@ -3874,7 +3875,7 @@ convert pp ranking</title>
         </td>
         <td>4881.77</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>535</td>
         <td class="user_name">
           <a href="users/563262.html">snail_player</a>
@@ -3888,7 +3889,7 @@ convert pp ranking</title>
         </td>
         <td>4876.93</td>
       </tr>
-      <tr class="Bosnia and Herzegovina">
+      <tr class="Bosnia_and_Herzegovina">
         <td>537</td>
         <td class="user_name">
           <a href="users/17105686.html">amar1</a>
@@ -3902,7 +3903,7 @@ convert pp ranking</title>
         </td>
         <td>4874.50</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>539</td>
         <td class="user_name">
           <a href="users/4485933.html">milr_</a>
@@ -3916,7 +3917,7 @@ convert pp ranking</title>
         </td>
         <td>4871.13</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>541</td>
         <td class="user_name">
           <a href="users/4724721.html">KOMSA</a>
@@ -3930,7 +3931,7 @@ convert pp ranking</title>
         </td>
         <td>4867.64</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>543</td>
         <td class="user_name">
           <a href="users/4590386.html">b-a-d-ass123</a>
@@ -3979,7 +3980,7 @@ convert pp ranking</title>
         </td>
         <td>4842.71</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>550</td>
         <td class="user_name">
           <a href="users/1301610.html">Lufsig</a>
@@ -3993,7 +3994,7 @@ convert pp ranking</title>
         </td>
         <td>4835.91</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>552</td>
         <td class="user_name">
           <a href="users/2193687.html">Skybussa</a>
@@ -4091,7 +4092,7 @@ convert pp ranking</title>
         </td>
         <td>4796.72</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>566</td>
         <td class="user_name">
           <a href="users/1292577.html">shortcake</a>
@@ -4119,7 +4120,7 @@ convert pp ranking</title>
         </td>
         <td>4790.94</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>570</td>
         <td class="user_name">
           <a href="users/1251439.html">[ Dine out ]</a>
@@ -4168,7 +4169,7 @@ convert pp ranking</title>
         </td>
         <td>4771.74</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>577</td>
         <td class="user_name">
           <a href="users/1264755.html">Infamous Shadow</a>
@@ -4189,7 +4190,7 @@ convert pp ranking</title>
         </td>
         <td>4765.41</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>580</td>
         <td class="user_name">
           <a href="users/6403823.html">zove</a>
@@ -4210,7 +4211,7 @@ convert pp ranking</title>
         </td>
         <td>4760.75</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>583</td>
         <td class="user_name">
           <a href="users/1616944.html">TeruTeru</a>
@@ -4238,7 +4239,7 @@ convert pp ranking</title>
         </td>
         <td>4754.14</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>587</td>
         <td class="user_name">
           <a href="users/2241910.html">Roxy Migurdia</a>
@@ -4280,7 +4281,7 @@ convert pp ranking</title>
         </td>
         <td>4736.17</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>593</td>
         <td class="user_name">
           <a href="users/2556820.html">Happy Killing</a>
@@ -4371,7 +4372,7 @@ convert pp ranking</title>
         </td>
         <td>4697.41</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>606</td>
         <td class="user_name">
           <a href="users/14095299.html">-Salads-</a>
@@ -4385,7 +4386,7 @@ convert pp ranking</title>
         </td>
         <td>4685.29</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>608</td>
         <td class="user_name">
           <a href="users/4585297.html">Jimmy Rustler</a>
@@ -4413,7 +4414,7 @@ convert pp ranking</title>
         </td>
         <td>4680.34</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>612</td>
         <td class="user_name">
           <a href="users/2166292.html">[ Larc ]</a>
@@ -4483,7 +4484,7 @@ convert pp ranking</title>
         </td>
         <td>4651.25</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>622</td>
         <td class="user_name">
           <a href="users/4994598.html">Liyac</a>
@@ -4525,7 +4526,7 @@ convert pp ranking</title>
         </td>
         <td>4634.97</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>628</td>
         <td class="user_name">
           <a href="users/10095644.html">Ruiz</a>
@@ -4588,7 +4589,7 @@ convert pp ranking</title>
         </td>
         <td>4603.15</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>637</td>
         <td class="user_name">
           <a href="users/4219372.html">Sunkiss</a>
@@ -4609,7 +4610,7 @@ convert pp ranking</title>
         </td>
         <td>4588.33</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>640</td>
         <td class="user_name">
           <a href="users/3438241.html">Trent</a>
@@ -4651,7 +4652,7 @@ convert pp ranking</title>
         </td>
         <td>4576.67</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>646</td>
         <td class="user_name">
           <a href="users/4093627.html">YoBroOreos</a>
@@ -4672,7 +4673,7 @@ convert pp ranking</title>
         </td>
         <td>4557.35</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>649</td>
         <td class="user_name">
           <a href="users/9918296.html">LoneWolfB312</a>
@@ -4714,7 +4715,7 @@ convert pp ranking</title>
         </td>
         <td>4533.05</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>655</td>
         <td class="user_name">
           <a href="users/19781424.html">NovemberX</a>
@@ -4791,7 +4792,7 @@ convert pp ranking</title>
         </td>
         <td>4495.01</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>666</td>
         <td class="user_name">
           <a href="users/4607073.html">Hotaru</a>
@@ -4833,14 +4834,14 @@ convert pp ranking</title>
         </td>
         <td>4485.93</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>672</td>
         <td class="user_name">
           <a href="users/4879508.html">JBHyperion</a>
         </td>
         <td>4476.40</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>673</td>
         <td class="user_name">
           <a href="users/515623.html">E_Ain</a>
@@ -4882,14 +4883,14 @@ convert pp ranking</title>
         </td>
         <td>4453.64</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>679</td>
         <td class="user_name">
           <a href="users/3240418.html">insaneplayer</a>
         </td>
         <td>4452.96</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>680</td>
         <td class="user_name">
           <a href="users/16398312.html">Crimzyn</a>
@@ -4917,7 +4918,7 @@ convert pp ranking</title>
         </td>
         <td>4435.00</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>684</td>
         <td class="user_name">
           <a href="users/4373769.html">TheCoolMonster</a>
@@ -4980,7 +4981,7 @@ convert pp ranking</title>
         </td>
         <td>4397.78</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>693</td>
         <td class="user_name">
           <a href="users/13214067.html">Scripts</a>
@@ -5008,7 +5009,7 @@ convert pp ranking</title>
         </td>
         <td>4390.80</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>697</td>
         <td class="user_name">
           <a href="users/7712274.html">MajorNikolai54</a>
@@ -5036,7 +5037,7 @@ convert pp ranking</title>
         </td>
         <td>4373.64</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>701</td>
         <td class="user_name">
           <a href="users/2557117.html">Dusper</a>
@@ -5050,7 +5051,7 @@ convert pp ranking</title>
         </td>
         <td>4369.35</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>703</td>
         <td class="user_name">
           <a href="users/7191031.html">jellie</a>
@@ -5099,7 +5100,7 @@ convert pp ranking</title>
         </td>
         <td>4354.51</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>710</td>
         <td class="user_name">
           <a href="users/7789926.html">bvyans</a>
@@ -5155,7 +5156,7 @@ convert pp ranking</title>
         </td>
         <td>4334.39</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>718</td>
         <td class="user_name">
           <a href="users/2931883.html">Ascendance</a>
@@ -5176,7 +5177,7 @@ convert pp ranking</title>
         </td>
         <td>4331.13</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>721</td>
         <td class="user_name">
           <a href="users/19476018.html">mine</a>
@@ -5197,7 +5198,7 @@ convert pp ranking</title>
         </td>
         <td>4328.73</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>724</td>
         <td class="user_name">
           <a href="users/8909874.html">Reweii</a>
@@ -5218,14 +5219,14 @@ convert pp ranking</title>
         </td>
         <td>4323.26</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>727</td>
         <td class="user_name">
           <a href="users/522623.html">katsek</a>
         </td>
         <td>4320.85</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>728</td>
         <td class="user_name">
           <a href="users/158552.html">Kuzino</a>
@@ -5253,14 +5254,14 @@ convert pp ranking</title>
         </td>
         <td>4310.51</td>
       </tr>
-      <tr class="Saudi Arabia">
+      <tr class="Saudi_Arabia">
         <td>732</td>
         <td class="user_name">
           <a href="users/7162114.html">Re1ax7</a>
         </td>
         <td>4308.68</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>733</td>
         <td class="user_name">
           <a href="users/625893.html">[ -Ryu Sina- ]</a>
@@ -5323,7 +5324,7 @@ convert pp ranking</title>
         </td>
         <td>4274.65</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>742</td>
         <td class="user_name">
           <a href="users/2667584.html">destructor966</a>
@@ -5351,7 +5352,7 @@ convert pp ranking</title>
         </td>
         <td>4261.46</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>746</td>
         <td class="user_name">
           <a href="users/6576516.html">Spectori</a>
@@ -5365,7 +5366,7 @@ convert pp ranking</title>
         </td>
         <td>4260.46</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>748</td>
         <td class="user_name">
           <a href="users/7029386.html">[M0klng]</a>
@@ -5414,7 +5415,7 @@ convert pp ranking</title>
         </td>
         <td>4248.64</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>755</td>
         <td class="user_name">
           <a href="users/5861737.html">- Sumire -</a>
@@ -5442,7 +5443,7 @@ convert pp ranking</title>
         </td>
         <td>4233.83</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>759</td>
         <td class="user_name">
           <a href="users/968240.html">jacky437_hei</a>
@@ -5498,7 +5499,7 @@ convert pp ranking</title>
         </td>
         <td>4212.85</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>767</td>
         <td class="user_name">
           <a href="users/9402159.html">Headpat</a>
@@ -5519,14 +5520,14 @@ convert pp ranking</title>
         </td>
         <td>4209.86</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>770</td>
         <td class="user_name">
           <a href="users/9123274.html">DCreeperFanGirl</a>
         </td>
         <td>4207.25</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>771</td>
         <td class="user_name">
           <a href="users/7685138.html">vile</a>
@@ -5554,7 +5555,7 @@ convert pp ranking</title>
         </td>
         <td>4203.14</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>775</td>
         <td class="user_name">
           <a href="users/2200407.html">Pin</a>
@@ -5568,14 +5569,14 @@ convert pp ranking</title>
         </td>
         <td>4199.00</td>
       </tr>
-      <tr class="Costa Rica">
+      <tr class="Costa_Rica">
         <td>777</td>
         <td class="user_name">
           <a href="users/10579131.html">Feppo</a>
         </td>
         <td>4198.32</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>778</td>
         <td class="user_name">
           <a href="users/3013902.html">Sam L</a>
@@ -5708,7 +5709,7 @@ convert pp ranking</title>
         </td>
         <td>4156.39</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>797</td>
         <td class="user_name">
           <a href="users/9228388.html">004</a>
@@ -5729,7 +5730,7 @@ convert pp ranking</title>
         </td>
         <td>4146.56</td>
       </tr>
-      <tr class="Puerto Rico">
+      <tr class="Puerto_Rico">
         <td>800</td>
         <td class="user_name">
           <a href="users/4606506.html">Atsepser</a>
@@ -5750,7 +5751,7 @@ convert pp ranking</title>
         </td>
         <td>4142.74</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>803</td>
         <td class="user_name">
           <a href="users/7150609.html">BladeStep</a>
@@ -5785,14 +5786,14 @@ convert pp ranking</title>
         </td>
         <td>4137.21</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>808</td>
         <td class="user_name">
           <a href="users/4650266.html">__Hatsune_Miku</a>
         </td>
         <td>4134.05</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>809</td>
         <td class="user_name">
           <a href="users/2888808.html">Tokufi</a>
@@ -5813,7 +5814,7 @@ convert pp ranking</title>
         </td>
         <td>4126.47</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>812</td>
         <td class="user_name">
           <a href="users/11967846.html">Jameeze</a>
@@ -5834,7 +5835,7 @@ convert pp ranking</title>
         </td>
         <td>4114.37</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>815</td>
         <td class="user_name">
           <a href="users/7034422.html">Nidoking</a>
@@ -6023,14 +6024,14 @@ convert pp ranking</title>
         </td>
         <td>4047.47</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>842</td>
         <td class="user_name">
           <a href="users/2848604.html">toybot</a>
         </td>
         <td>4044.33</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>843</td>
         <td class="user_name">
           <a href="users/8846762.html">4rcheR-</a>
@@ -6072,7 +6073,7 @@ convert pp ranking</title>
         </td>
         <td>4036.05</td>
       </tr>
-      <tr class="Dominican Republic">
+      <tr class="Dominican_Republic">
         <td>849</td>
         <td class="user_name">
           <a href="users/2717415.html">Romm</a>
@@ -6142,7 +6143,7 @@ convert pp ranking</title>
         </td>
         <td>4017.84</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>859</td>
         <td class="user_name">
           <a href="users/5032045.html">wonjae</a>
@@ -6163,14 +6164,14 @@ convert pp ranking</title>
         </td>
         <td>4014.25</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>862</td>
         <td class="user_name">
           <a href="users/1917940.html">Placia</a>
         </td>
         <td>4013.61</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>863</td>
         <td class="user_name">
           <a href="users/1123309.html">WInkY1220</a>
@@ -6240,7 +6241,7 @@ convert pp ranking</title>
         </td>
         <td>3986.95</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>873</td>
         <td class="user_name">
           <a href="users/11660900.html">theconqueror12</a>
@@ -6338,7 +6339,7 @@ convert pp ranking</title>
         </td>
         <td>3948.77</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>887</td>
         <td class="user_name">
           <a href="users/3807221.html">FlandleScarlet</a>
@@ -6373,7 +6374,7 @@ convert pp ranking</title>
         </td>
         <td>3944.98</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>892</td>
         <td class="user_name">
           <a href="users/9784522.html">SimplyHai</a>
@@ -6394,14 +6395,14 @@ convert pp ranking</title>
         </td>
         <td>3935.53</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>895</td>
         <td class="user_name">
           <a href="users/3546931.html">Withered Lotus</a>
         </td>
         <td>3934.95</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>896</td>
         <td class="user_name">
           <a href="users/6947412.html">Akaterry</a>
@@ -6422,7 +6423,7 @@ convert pp ranking</title>
         </td>
         <td>3932.52</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>899</td>
         <td class="user_name">
           <a href="users/12004983.html">Elux</a>
@@ -6499,7 +6500,7 @@ convert pp ranking</title>
         </td>
         <td>3912.42</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>910</td>
         <td class="user_name">
           <a href="users/7300747.html">GiGas</a>
@@ -6541,7 +6542,7 @@ convert pp ranking</title>
         </td>
         <td>3894.92</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>916</td>
         <td class="user_name">
           <a href="users/11535744.html">log out side</a>
@@ -6583,7 +6584,7 @@ convert pp ranking</title>
         </td>
         <td>3889.29</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>922</td>
         <td class="user_name">
           <a href="users/686214.html">Shota</a>
@@ -6618,7 +6619,7 @@ convert pp ranking</title>
         </td>
         <td>3875.49</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>927</td>
         <td class="user_name">
           <a href="users/1474603.html">Orbital</a>
@@ -6653,14 +6654,14 @@ convert pp ranking</title>
         </td>
         <td>3865.65</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>932</td>
         <td class="user_name">
           <a href="users/4560039.html">Smudge</a>
         </td>
         <td>3864.80</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>933</td>
         <td class="user_name">
           <a href="users/653016.html">gaten</a>
@@ -6695,7 +6696,7 @@ convert pp ranking</title>
         </td>
         <td>3858.29</td>
       </tr>
-      <tr class="Dominican Republic">
+      <tr class="Dominican_Republic">
         <td>938</td>
         <td class="user_name">
           <a href="users/11176520.html">[225]Aizen</a>
@@ -6709,14 +6710,14 @@ convert pp ranking</title>
         </td>
         <td>3854.48</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>940</td>
         <td class="user_name">
           <a href="users/6773897.html">MegaMan</a>
         </td>
         <td>3852.15</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>941</td>
         <td class="user_name">
           <a href="users/2799946.html">Zoggoth</a>
@@ -6800,7 +6801,7 @@ convert pp ranking</title>
         </td>
         <td>3828.16</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>953</td>
         <td class="user_name">
           <a href="users/123976.html">[Strike]</a>
@@ -6814,14 +6815,14 @@ convert pp ranking</title>
         </td>
         <td>3823.67</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>955</td>
         <td class="user_name">
           <a href="users/15646397.html">GuRuuk</a>
         </td>
         <td>3822.77</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>956</td>
         <td class="user_name">
           <a href="users/12331683.html">littlepiggod</a>
@@ -6919,7 +6920,7 @@ convert pp ranking</title>
         </td>
         <td>3782.53</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>970</td>
         <td class="user_name">
           <a href="users/8611935.html">Stats-Kun</a>
@@ -6982,7 +6983,7 @@ convert pp ranking</title>
         </td>
         <td>3759.07</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>979</td>
         <td class="user_name">
           <a href="users/4642937.html">FrozenPeng</a>
@@ -6996,7 +6997,7 @@ convert pp ranking</title>
         </td>
         <td>3757.06</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>981</td>
         <td class="user_name">
           <a href="users/88973.html">Health</a>
@@ -7052,7 +7053,7 @@ convert pp ranking</title>
         </td>
         <td>3734.78</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>989</td>
         <td class="user_name">
           <a href="users/2818653.html">Darid</a>
@@ -7094,21 +7095,21 @@ convert pp ranking</title>
         </td>
         <td>3723.16</td>
       </tr>
-      <tr class="El Salvador">
+      <tr class="El_Salvador">
         <td>995</td>
         <td class="user_name">
           <a href="users/14143010.html">-Byul-</a>
         </td>
         <td>3722.98</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>996</td>
         <td class="user_name">
           <a href="users/7931526.html">Cyan54</a>
         </td>
         <td>3722.34</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>997</td>
         <td class="user_name">
           <a href="users/2199555.html">Sherbert</a>
@@ -7192,14 +7193,14 @@ convert pp ranking</title>
         </td>
         <td>3684.17</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1009</td>
         <td class="user_name">
           <a href="users/948713.html">Reimu-Desu</a>
         </td>
         <td>3683.28</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1010</td>
         <td class="user_name">
           <a href="users/6508754.html">Edgar_Figaro</a>
@@ -7262,7 +7263,7 @@ convert pp ranking</title>
         </td>
         <td>3659.83</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1019</td>
         <td class="user_name">
           <a href="users/1252928.html">Catch The Beat</a>
@@ -7283,7 +7284,7 @@ convert pp ranking</title>
         </td>
         <td>3646.09</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1022</td>
         <td class="user_name">
           <a href="users/4050223.html">Tomcat</a>
@@ -7402,7 +7403,7 @@ convert pp ranking</title>
         </td>
         <td>3605.06</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1039</td>
         <td class="user_name">
           <a href="users/5220511.html">Dohland</a>
@@ -7416,7 +7417,7 @@ convert pp ranking</title>
         </td>
         <td>3595.20</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1041</td>
         <td class="user_name">
           <a href="users/3631032.html">Lan</a>
@@ -7542,7 +7543,7 @@ convert pp ranking</title>
         </td>
         <td>3557.18</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1059</td>
         <td class="user_name">
           <a href="users/10286499.html">Baron</a>
@@ -7570,7 +7571,7 @@ convert pp ranking</title>
         </td>
         <td>3545.16</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1063</td>
         <td class="user_name">
           <a href="users/6389252.html">InsaneToe</a>
@@ -7703,7 +7704,7 @@ convert pp ranking</title>
         </td>
         <td>3520.04</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1082</td>
         <td class="user_name">
           <a href="users/9019507.html">[224]Two</a>
@@ -7738,7 +7739,7 @@ convert pp ranking</title>
         </td>
         <td>3509.19</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1087</td>
         <td class="user_name">
           <a href="users/2565819.html">Aoba Misaki</a>
@@ -7752,7 +7753,7 @@ convert pp ranking</title>
         </td>
         <td>3504.75</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1089</td>
         <td class="user_name">
           <a href="users/1888948.html">Yuria-</a>
@@ -7766,14 +7767,14 @@ convert pp ranking</title>
         </td>
         <td>3499.86</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1091</td>
         <td class="user_name">
           <a href="users/14495805.html">deskilln</a>
         </td>
         <td>3497.42</td>
       </tr>
-      <tr class="Saudi Arabia">
+      <tr class="Saudi_Arabia">
         <td>1092</td>
         <td class="user_name">
           <a href="users/5308080.html">MooN4000</a>
@@ -7843,7 +7844,7 @@ convert pp ranking</title>
         </td>
         <td>3473.71</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1102</td>
         <td class="user_name">
           <a href="users/9926856.html">Starwide</a>
@@ -7962,7 +7963,7 @@ convert pp ranking</title>
         </td>
         <td>3449.18</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1119</td>
         <td class="user_name">
           <a href="users/4739506.html">A Moon Gust</a>
@@ -8046,7 +8047,7 @@ convert pp ranking</title>
         </td>
         <td>3435.02</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1131</td>
         <td class="user_name">
           <a href="users/12572192.html">Frisbi</a>
@@ -8067,7 +8068,7 @@ convert pp ranking</title>
         </td>
         <td>3428.96</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1134</td>
         <td class="user_name">
           <a href="users/13178998.html">Hard Practice</a>
@@ -8088,7 +8089,7 @@ convert pp ranking</title>
         </td>
         <td>3424.89</td>
       </tr>
-      <tr class="Puerto Rico">
+      <tr class="Puerto_Rico">
         <td>1137</td>
         <td class="user_name">
           <a href="users/2948119.html">-londy</a>
@@ -8102,14 +8103,14 @@ convert pp ranking</title>
         </td>
         <td>3424.45</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1139</td>
         <td class="user_name">
           <a href="users/8822027.html">Aayuri</a>
         </td>
         <td>3422.63</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1140</td>
         <td class="user_name">
           <a href="users/9814038.html">Chicken-chan</a>
@@ -8144,7 +8145,7 @@ convert pp ranking</title>
         </td>
         <td>3412.43</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1145</td>
         <td class="user_name">
           <a href="users/11899441.html">RapidRubyV21</a>
@@ -8214,14 +8215,14 @@ convert pp ranking</title>
         </td>
         <td>3391.55</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1155</td>
         <td class="user_name">
           <a href="users/5375053.html">[Crescent]</a>
         </td>
         <td>3384.26</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1156</td>
         <td class="user_name">
           <a href="users/3759207.html">[Poppers]</a>
@@ -8235,7 +8236,7 @@ convert pp ranking</title>
         </td>
         <td>3378.80</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1158</td>
         <td class="user_name">
           <a href="users/8584061.html">Pi-</a>
@@ -8284,7 +8285,7 @@ convert pp ranking</title>
         </td>
         <td>3364.28</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1165</td>
         <td class="user_name">
           <a href="users/14714724.html">Vaqu</a>
@@ -8319,7 +8320,7 @@ convert pp ranking</title>
         </td>
         <td>3345.29</td>
       </tr>
-      <tr class="Puerto Rico">
+      <tr class="Puerto_Rico">
         <td>1170</td>
         <td class="user_name">
           <a href="users/5022932.html">Zech</a>
@@ -8361,7 +8362,7 @@ convert pp ranking</title>
         </td>
         <td>3337.02</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1176</td>
         <td class="user_name">
           <a href="users/235211.html">Lyra</a>
@@ -8382,7 +8383,7 @@ convert pp ranking</title>
         </td>
         <td>3333.49</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1179</td>
         <td class="user_name">
           <a href="users/4847256.html">Absolute Zero</a>
@@ -8466,7 +8467,7 @@ convert pp ranking</title>
         </td>
         <td>3305.98</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1191</td>
         <td class="user_name">
           <a href="users/5046521.html">I love my cat</a>
@@ -8487,7 +8488,7 @@ convert pp ranking</title>
         </td>
         <td>3302.26</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1194</td>
         <td class="user_name">
           <a href="users/1162516.html">-Navillera</a>
@@ -8536,7 +8537,7 @@ convert pp ranking</title>
         </td>
         <td>3281.78</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1201</td>
         <td class="user_name">
           <a href="users/5927823.html">Blushing</a>
@@ -8613,7 +8614,7 @@ convert pp ranking</title>
         </td>
         <td>3260.94</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1212</td>
         <td class="user_name">
           <a href="users/6645501.html">Time Series</a>
@@ -8648,7 +8649,7 @@ convert pp ranking</title>
         </td>
         <td>3248.67</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1217</td>
         <td class="user_name">
           <a href="users/9892196.html">Hoshikuz</a>
@@ -8683,7 +8684,7 @@ convert pp ranking</title>
         </td>
         <td>3243.96</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1222</td>
         <td class="user_name">
           <a href="users/25880514.html">Dan9iel</a>
@@ -8697,14 +8698,14 @@ convert pp ranking</title>
         </td>
         <td>3236.90</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1224</td>
         <td class="user_name">
           <a href="users/11751063.html">_CybeR</a>
         </td>
         <td>3236.17</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1225</td>
         <td class="user_name">
           <a href="users/6791136.html">Joth</a>
@@ -8732,7 +8733,7 @@ convert pp ranking</title>
         </td>
         <td>3229.55</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1229</td>
         <td class="user_name">
           <a href="users/12006280.html">Yunabi</a>
@@ -8802,7 +8803,7 @@ convert pp ranking</title>
         </td>
         <td>3212.59</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1239</td>
         <td class="user_name">
           <a href="users/2367959.html">Ficsta</a>
@@ -8830,7 +8831,7 @@ convert pp ranking</title>
         </td>
         <td>3199.71</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1243</td>
         <td class="user_name">
           <a href="users/9707172.html">Luinel</a>
@@ -8851,7 +8852,7 @@ convert pp ranking</title>
         </td>
         <td>3198.07</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1246</td>
         <td class="user_name">
           <a href="users/3896556.html">[Matesava]</a>
@@ -8872,14 +8873,14 @@ convert pp ranking</title>
         </td>
         <td>3192.58</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1249</td>
         <td class="user_name">
           <a href="users/1937045.html">hkdckfg</a>
         </td>
         <td>3191.86</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1250</td>
         <td class="user_name">
           <a href="users/857792.html">amagie</a>
@@ -8893,14 +8894,14 @@ convert pp ranking</title>
         </td>
         <td>3183.96</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1252</td>
         <td class="user_name">
           <a href="users/6704228.html">Nugget The Cat</a>
         </td>
         <td>3183.95</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1253</td>
         <td class="user_name">
           <a href="users/9668674.html">Yoshologist</a>
@@ -8949,7 +8950,7 @@ convert pp ranking</title>
         </td>
         <td>3169.83</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1260</td>
         <td class="user_name">
           <a href="users/12090552.html">C0IN</a>
@@ -8977,14 +8978,14 @@ convert pp ranking</title>
         </td>
         <td>3158.61</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1264</td>
         <td class="user_name">
           <a href="users/632048.html">vkells</a>
         </td>
         <td>3157.35</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1265</td>
         <td class="user_name">
           <a href="users/2904705.html">Phosphores</a>
@@ -9005,7 +9006,7 @@ convert pp ranking</title>
         </td>
         <td>3152.49</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1268</td>
         <td class="user_name">
           <a href="users/2900145.html">dhtldhfk12</a>
@@ -9033,7 +9034,7 @@ convert pp ranking</title>
         </td>
         <td>3145.68</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1272</td>
         <td class="user_name">
           <a href="users/10727985.html">Enjuxx</a>
@@ -9061,7 +9062,7 @@ convert pp ranking</title>
         </td>
         <td>3141.97</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1276</td>
         <td class="user_name">
           <a href="users/26695963.html">Eu4ria</a>
@@ -9103,7 +9104,7 @@ convert pp ranking</title>
         </td>
         <td>3133.82</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1282</td>
         <td class="user_name">
           <a href="users/3167450.html">Kiwi</a>
@@ -9145,7 +9146,7 @@ convert pp ranking</title>
         </td>
         <td>3118.31</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1288</td>
         <td class="user_name">
           <a href="users/4763555.html">Gumbatic</a>
@@ -9159,7 +9160,7 @@ convert pp ranking</title>
         </td>
         <td>3115.80</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1290</td>
         <td class="user_name">
           <a href="users/9103869.html">Eson-</a>
@@ -9208,7 +9209,7 @@ convert pp ranking</title>
         </td>
         <td>3104.82</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1297</td>
         <td class="user_name">
           <a href="users/1424173.html">Bloodyperch201</a>
@@ -9236,7 +9237,7 @@ convert pp ranking</title>
         </td>
         <td>3094.20</td>
       </tr>
-      <tr class="New Caledonia">
+      <tr class="New_Caledonia">
         <td>1301</td>
         <td class="user_name">
           <a href="users/3448042.html">Yamu</a>
@@ -9299,7 +9300,7 @@ convert pp ranking</title>
         </td>
         <td>3082.43</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1310</td>
         <td class="user_name">
           <a href="users/550473.html">hassanfitt</a>
@@ -9327,14 +9328,14 @@ convert pp ranking</title>
         </td>
         <td>3074.32</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1314</td>
         <td class="user_name">
           <a href="users/7330584.html">BlitzArk</a>
         </td>
         <td>3072.53</td>
       </tr>
-      <tr class="United Arab Emirates">
+      <tr class="United_Arab_Emirates">
         <td>1315</td>
         <td class="user_name">
           <a href="users/4191965.html">]O]O</a>
@@ -9397,7 +9398,7 @@ convert pp ranking</title>
         </td>
         <td>3061.57</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1324</td>
         <td class="user_name">
           <a href="users/4402757.html">Bruther</a>
@@ -9502,14 +9503,14 @@ convert pp ranking</title>
         </td>
         <td>3029.96</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1339</td>
         <td class="user_name">
           <a href="users/11497549.html">Enmei</a>
         </td>
         <td>3027.07</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1340</td>
         <td class="user_name">
           <a href="users/6336713.html">My Angel RangE</a>
@@ -9523,7 +9524,7 @@ convert pp ranking</title>
         </td>
         <td>3024.66</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1342</td>
         <td class="user_name">
           <a href="users/4870938.html">7uta</a>
@@ -9544,7 +9545,7 @@ convert pp ranking</title>
         </td>
         <td>3020.08</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1345</td>
         <td class="user_name">
           <a href="users/5635563.html">tossrich</a>
@@ -9579,7 +9580,7 @@ convert pp ranking</title>
         </td>
         <td>3011.11</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1350</td>
         <td class="user_name">
           <a href="users/3619875.html">lord98kjp</a>
@@ -9600,7 +9601,7 @@ convert pp ranking</title>
         </td>
         <td>3008.47</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1353</td>
         <td class="user_name">
           <a href="users/4307102.html">Shakti</a>
@@ -9614,14 +9615,14 @@ convert pp ranking</title>
         </td>
         <td>3005.67</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1355</td>
         <td class="user_name">
           <a href="users/1590730.html">ScarletVRC</a>
         </td>
         <td>3002.38</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1356</td>
         <td class="user_name">
           <a href="users/7587447.html">Vickty</a>
@@ -9663,7 +9664,7 @@ convert pp ranking</title>
         </td>
         <td>2979.51</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1362</td>
         <td class="user_name">
           <a href="users/4990320.html">The 47th</a>
@@ -9677,7 +9678,7 @@ convert pp ranking</title>
         </td>
         <td>2971.33</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1364</td>
         <td class="user_name">
           <a href="users/4266189.html">Fast</a>
@@ -9698,7 +9699,7 @@ convert pp ranking</title>
         </td>
         <td>2965.38</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1367</td>
         <td class="user_name">
           <a href="users/165027.html">Peaceful</a>
@@ -9712,7 +9713,7 @@ convert pp ranking</title>
         </td>
         <td>2964.05</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1369</td>
         <td class="user_name">
           <a href="users/8047205.html">kor kjs</a>
@@ -9726,21 +9727,21 @@ convert pp ranking</title>
         </td>
         <td>2958.74</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1371</td>
         <td class="user_name">
           <a href="users/12904746.html">[0v0]</a>
         </td>
         <td>2956.88</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1372</td>
         <td class="user_name">
           <a href="users/2512718.html">PCRedHot</a>
         </td>
         <td>2956.15</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1373</td>
         <td class="user_name">
           <a href="users/5401875.html">kon7336</a>
@@ -9782,7 +9783,7 @@ convert pp ranking</title>
         </td>
         <td>2942.20</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1379</td>
         <td class="user_name">
           <a href="users/12097381.html">-Sachiko-</a>
@@ -9845,7 +9846,7 @@ convert pp ranking</title>
         </td>
         <td>2908.32</td>
       </tr>
-      <tr class="El Salvador">
+      <tr class="El_Salvador">
         <td>1388</td>
         <td class="user_name">
           <a href="users/17630607.html">Not_Toretto</a>
@@ -9880,7 +9881,7 @@ convert pp ranking</title>
         </td>
         <td>2903.90</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1393</td>
         <td class="user_name">
           <a href="users/12039938.html">Hillo</a>
@@ -9922,7 +9923,7 @@ convert pp ranking</title>
         </td>
         <td>2895.73</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1399</td>
         <td class="user_name">
           <a href="users/1009521.html">[Runastory]</a>
@@ -9985,7 +9986,7 @@ convert pp ranking</title>
         </td>
         <td>2871.37</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1408</td>
         <td class="user_name">
           <a href="users/6013277.html">GuitarHero_King</a>
@@ -9999,7 +10000,7 @@ convert pp ranking</title>
         </td>
         <td>2870.84</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1410</td>
         <td class="user_name">
           <a href="users/1602422.html">- LOTUS -</a>
@@ -10048,7 +10049,7 @@ convert pp ranking</title>
         </td>
         <td>2862.98</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1417</td>
         <td class="user_name">
           <a href="users/1689751.html">Eppilon</a>
@@ -10069,7 +10070,7 @@ convert pp ranking</title>
         </td>
         <td>2856.70</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1420</td>
         <td class="user_name">
           <a href="users/25685698.html">swertd</a>
@@ -10083,7 +10084,7 @@ convert pp ranking</title>
         </td>
         <td>2852.44</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1422</td>
         <td class="user_name">
           <a href="users/24524181.html">debub</a>
@@ -10139,7 +10140,7 @@ convert pp ranking</title>
         </td>
         <td>2842.68</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1430</td>
         <td class="user_name">
           <a href="users/10149468.html">Haachama</a>
@@ -10195,7 +10196,7 @@ convert pp ranking</title>
         </td>
         <td>2825.97</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1438</td>
         <td class="user_name">
           <a href="users/1356676.html">Cheese-w-</a>
@@ -10223,7 +10224,7 @@ convert pp ranking</title>
         </td>
         <td>2822.95</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1442</td>
         <td class="user_name">
           <a href="users/13005571.html">Spring16</a>
@@ -10356,7 +10357,7 @@ convert pp ranking</title>
         </td>
         <td>2762.51</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1461</td>
         <td class="user_name">
           <a href="users/3790227.html">Snowleopard</a>
@@ -10398,7 +10399,7 @@ convert pp ranking</title>
         </td>
         <td>2749.02</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1467</td>
         <td class="user_name">
           <a href="users/10305958.html">L-E-X-I</a>
@@ -10433,14 +10434,14 @@ convert pp ranking</title>
         </td>
         <td>2740.72</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1472</td>
         <td class="user_name">
           <a href="users/6305677.html">visualze</a>
         </td>
         <td>2740.12</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1473</td>
         <td class="user_name">
           <a href="users/9026017.html">Angel Jibril</a>
@@ -10510,7 +10511,7 @@ convert pp ranking</title>
         </td>
         <td>2714.11</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1483</td>
         <td class="user_name">
           <a href="users/10770802.html">-[NetriX]-</a>
@@ -10587,7 +10588,7 @@ convert pp ranking</title>
         </td>
         <td>2693.67</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1494</td>
         <td class="user_name">
           <a href="users/1473142.html">kudeyes</a>
@@ -10720,35 +10721,35 @@ convert pp ranking</title>
         </td>
         <td>2642.28</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1513</td>
         <td class="user_name">
           <a href="users/4657109.html">Experiment 626</a>
         </td>
         <td>2639.37</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1514</td>
         <td class="user_name">
           <a href="users/12706315.html">-blinky</a>
         </td>
         <td>2638.38</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1515</td>
         <td class="user_name">
           <a href="users/7588074.html">-[Shady]-</a>
         </td>
         <td>2633.97</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1516</td>
         <td class="user_name">
           <a href="users/16496103.html">arwab</a>
         </td>
         <td>2631.96</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1517</td>
         <td class="user_name">
           <a href="users/8549047.html">CatgirlCultist</a>
@@ -10762,7 +10763,7 @@ convert pp ranking</title>
         </td>
         <td>2628.10</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1519</td>
         <td class="user_name">
           <a href="users/4928894.html">Bowl323</a>
@@ -10783,14 +10784,14 @@ convert pp ranking</title>
         </td>
         <td>2621.02</td>
       </tr>
-      <tr class="El Salvador">
+      <tr class="El_Salvador">
         <td>1522</td>
         <td class="user_name">
           <a href="users/10170749.html">Maurix28</a>
         </td>
         <td>2616.90</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1523</td>
         <td class="user_name">
           <a href="users/14626093.html">DouYuAv_Nam0618</a>
@@ -10832,7 +10833,7 @@ convert pp ranking</title>
         </td>
         <td>2596.59</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1529</td>
         <td class="user_name">
           <a href="users/20365444.html">Vinixy</a>
@@ -10853,7 +10854,7 @@ convert pp ranking</title>
         </td>
         <td>2590.60</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1532</td>
         <td class="user_name">
           <a href="users/12467500.html">Starbrush</a>
@@ -10916,7 +10917,7 @@ convert pp ranking</title>
         </td>
         <td>2560.66</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1541</td>
         <td class="user_name">
           <a href="users/8492808.html">Wikro</a>
@@ -10944,7 +10945,7 @@ convert pp ranking</title>
         </td>
         <td>2557.04</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1545</td>
         <td class="user_name">
           <a href="users/10491951.html">dogshit player</a>
@@ -11049,7 +11050,7 @@ convert pp ranking</title>
         </td>
         <td>2524.28</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1560</td>
         <td class="user_name">
           <a href="users/9149875.html">scene</a>
@@ -11063,7 +11064,7 @@ convert pp ranking</title>
         </td>
         <td>2520.80</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1562</td>
         <td class="user_name">
           <a href="users/3752338.html">MuangMuangE</a>
@@ -11126,7 +11127,7 @@ convert pp ranking</title>
         </td>
         <td>2493.05</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1571</td>
         <td class="user_name">
           <a href="users/6773435.html">joyride</a>
@@ -11189,7 +11190,7 @@ convert pp ranking</title>
         </td>
         <td>2475.38</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1580</td>
         <td class="user_name">
           <a href="users/9740073.html">Nashiro</a>
@@ -11231,7 +11232,7 @@ convert pp ranking</title>
         </td>
         <td>2458.42</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1586</td>
         <td class="user_name">
           <a href="users/11264495.html">WitheringSou1</a>
@@ -11252,7 +11253,7 @@ convert pp ranking</title>
         </td>
         <td>2446.01</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1589</td>
         <td class="user_name">
           <a href="users/6385429.html">Drowsy</a>
@@ -11385,7 +11386,7 @@ convert pp ranking</title>
         </td>
         <td>2398.24</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1608</td>
         <td class="user_name">
           <a href="users/4570550.html">Barakas</a>
@@ -11434,7 +11435,7 @@ convert pp ranking</title>
         </td>
         <td>2381.30</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1615</td>
         <td class="user_name">
           <a href="users/6906010.html">Luciel</a>
@@ -11455,7 +11456,7 @@ convert pp ranking</title>
         </td>
         <td>2373.16</td>
       </tr>
-      <tr class="Saudi Arabia">
+      <tr class="Saudi_Arabia">
         <td>1618</td>
         <td class="user_name">
           <a href="users/24327100.html">JA Troll my dad</a>
@@ -11539,14 +11540,14 @@ convert pp ranking</title>
         </td>
         <td>2349.81</td>
       </tr>
-      <tr class="Saudi Arabia">
+      <tr class="Saudi_Arabia">
         <td>1630</td>
         <td class="user_name">
           <a href="users/15232590.html">theShadowLLX</a>
         </td>
         <td>2346.84</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1631</td>
         <td class="user_name">
           <a href="users/10281149.html">EpicTHO</a>
@@ -11595,7 +11596,7 @@ convert pp ranking</title>
         </td>
         <td>2329.68</td>
       </tr>
-      <tr class="United Arab Emirates">
+      <tr class="United_Arab_Emirates">
         <td>1638</td>
         <td class="user_name">
           <a href="users/8412101.html">JA Troll</a>
@@ -11609,7 +11610,7 @@ convert pp ranking</title>
         </td>
         <td>2321.05</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1640</td>
         <td class="user_name">
           <a href="users/1086251.html">Chemu</a>
@@ -11644,28 +11645,28 @@ convert pp ranking</title>
         </td>
         <td>2311.62</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1645</td>
         <td class="user_name">
           <a href="users/3349769.html">Brandonls1</a>
         </td>
         <td>2308.21</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1646</td>
         <td class="user_name">
           <a href="users/18492932.html">E-man</a>
         </td>
         <td>2305.60</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1647</td>
         <td class="user_name">
           <a href="users/7233431.html">ZacAttack_98</a>
         </td>
         <td>2304.05</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1648</td>
         <td class="user_name">
           <a href="users/10707580.html">Neko</a>
@@ -11679,7 +11680,7 @@ convert pp ranking</title>
         </td>
         <td>2289.60</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1650</td>
         <td class="user_name">
           <a href="users/10193706.html">alextheman2017</a>
@@ -11714,14 +11715,14 @@ convert pp ranking</title>
         </td>
         <td>2278.09</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1655</td>
         <td class="user_name">
           <a href="users/9239206.html">Tomato</a>
         </td>
         <td>2278.01</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1656</td>
         <td class="user_name">
           <a href="users/12182399.html">Adisi</a>
@@ -11735,7 +11736,7 @@ convert pp ranking</title>
         </td>
         <td>2276.26</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1658</td>
         <td class="user_name">
           <a href="users/11287463.html">jrpkf</a>
@@ -11763,7 +11764,7 @@ convert pp ranking</title>
         </td>
         <td>2255.01</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1662</td>
         <td class="user_name">
           <a href="users/13636117.html">AnimatedThinks</a>
@@ -11777,7 +11778,7 @@ convert pp ranking</title>
         </td>
         <td>2243.26</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1664</td>
         <td class="user_name">
           <a href="users/6137142.html">Kitsura</a>
@@ -11826,7 +11827,7 @@ convert pp ranking</title>
         </td>
         <td>2228.06</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1671</td>
         <td class="user_name">
           <a href="users/9872908.html">Sissel</a>
@@ -11847,7 +11848,7 @@ convert pp ranking</title>
         </td>
         <td>2223.41</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1674</td>
         <td class="user_name">
           <a href="users/8205964.html">Icy</a>
@@ -11910,7 +11911,7 @@ convert pp ranking</title>
         </td>
         <td>2190.43</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1683</td>
         <td class="user_name">
           <a href="users/2499089.html">4399guangguang</a>
@@ -11980,7 +11981,7 @@ convert pp ranking</title>
         </td>
         <td>2170.99</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1693</td>
         <td class="user_name">
           <a href="users/7828945.html">Vadeblade</a>
@@ -12001,7 +12002,7 @@ convert pp ranking</title>
         </td>
         <td>2164.62</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1696</td>
         <td class="user_name">
           <a href="users/6918243.html">Mariar</a>
@@ -12022,7 +12023,7 @@ convert pp ranking</title>
         </td>
         <td>2150.28</td>
       </tr>
-      <tr class="Åland Islands">
+      <tr class="Åland_Islands">
         <td>1699</td>
         <td class="user_name">
           <a href="users/5070783.html">Osdare</a>
@@ -12071,7 +12072,7 @@ convert pp ranking</title>
         </td>
         <td>2133.96</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1706</td>
         <td class="user_name">
           <a href="users/2715118.html">Voltaeyx</a>
@@ -12106,7 +12107,7 @@ convert pp ranking</title>
         </td>
         <td>2113.77</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1711</td>
         <td class="user_name">
           <a href="users/20031183.html">BasicsZ</a>
@@ -12120,14 +12121,14 @@ convert pp ranking</title>
         </td>
         <td>2112.70</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1713</td>
         <td class="user_name">
           <a href="users/2602338.html">bakugan2win</a>
         </td>
         <td>2109.23</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1714</td>
         <td class="user_name">
           <a href="users/11272003.html">ExoticEmerald</a>
@@ -12148,7 +12149,7 @@ convert pp ranking</title>
         </td>
         <td>2106.30</td>
       </tr>
-      <tr class="Dominican Republic">
+      <tr class="Dominican_Republic">
         <td>1717</td>
         <td class="user_name">
           <a href="users/9734910.html">etherna1</a>
@@ -12204,7 +12205,7 @@ convert pp ranking</title>
         </td>
         <td>2084.18</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1725</td>
         <td class="user_name">
           <a href="users/8840398.html">OneShotFox</a>
@@ -12351,14 +12352,14 @@ convert pp ranking</title>
         </td>
         <td>2027.34</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1746</td>
         <td class="user_name">
           <a href="users/5126518.html">Litlas</a>
         </td>
         <td>2024.17</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1747</td>
         <td class="user_name">
           <a href="users/4013465.html">Wishs</a>
@@ -12393,14 +12394,14 @@ convert pp ranking</title>
         </td>
         <td>2012.83</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1752</td>
         <td class="user_name">
           <a href="users/4955965.html">Nekozuka Neko</a>
         </td>
         <td>2011.51</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1753</td>
         <td class="user_name">
           <a href="users/11529135.html">Prezident</a>
@@ -12414,7 +12415,7 @@ convert pp ranking</title>
         </td>
         <td>2007.37</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1755</td>
         <td class="user_name">
           <a href="users/8705803.html">lapix</a>
@@ -12442,7 +12443,7 @@ convert pp ranking</title>
         </td>
         <td>1994.02</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1759</td>
         <td class="user_name">
           <a href="users/6349821.html">cheese salad</a>
@@ -12575,7 +12576,7 @@ convert pp ranking</title>
         </td>
         <td>1921.65</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1778</td>
         <td class="user_name">
           <a href="users/14978590.html">Shiroko12</a>
@@ -12617,7 +12618,7 @@ convert pp ranking</title>
         </td>
         <td>1901.14</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1784</td>
         <td class="user_name">
           <a href="users/1922382.html">Donald Duck-</a>
@@ -12666,7 +12667,7 @@ convert pp ranking</title>
         </td>
         <td>1884.69</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1791</td>
         <td class="user_name">
           <a href="users/11837957.html">Understandable</a>
@@ -12687,7 +12688,7 @@ convert pp ranking</title>
         </td>
         <td>1874.02</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1794</td>
         <td class="user_name">
           <a href="users/12369874.html">Ksylo</a>
@@ -12722,7 +12723,7 @@ convert pp ranking</title>
         </td>
         <td>1847.33</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1799</td>
         <td class="user_name">
           <a href="users/7530161.html">aidanbot360</a>
@@ -12862,7 +12863,7 @@ convert pp ranking</title>
         </td>
         <td>1774.79</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1819</td>
         <td class="user_name">
           <a href="users/3971190.html">RC Fox</a>
@@ -12876,14 +12877,14 @@ convert pp ranking</title>
         </td>
         <td>1768.75</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1821</td>
         <td class="user_name">
           <a href="users/10804262.html">Jpiv</a>
         </td>
         <td>1768.20</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1822</td>
         <td class="user_name">
           <a href="users/7560445.html">Scuml0rd</a>
@@ -12960,7 +12961,7 @@ convert pp ranking</title>
         </td>
         <td>1733.16</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1833</td>
         <td class="user_name">
           <a href="users/3216815.html">neptuneHDN</a>
@@ -12988,7 +12989,7 @@ convert pp ranking</title>
         </td>
         <td>1716.27</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1837</td>
         <td class="user_name">
           <a href="users/17853754.html">hac</a>
@@ -13002,7 +13003,7 @@ convert pp ranking</title>
         </td>
         <td>1703.01</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1839</td>
         <td class="user_name">
           <a href="users/13272197.html">anasAQ04</a>
@@ -13016,7 +13017,7 @@ convert pp ranking</title>
         </td>
         <td>1698.01</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1841</td>
         <td class="user_name">
           <a href="users/11735313.html">CTB Sakamata1</a>
@@ -13030,14 +13031,14 @@ convert pp ranking</title>
         </td>
         <td>1672.32</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1843</td>
         <td class="user_name">
           <a href="users/10872882.html">tobuux</a>
         </td>
         <td>1667.78</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1844</td>
         <td class="user_name">
           <a href="users/9423766.html">Logan636</a>
@@ -13051,7 +13052,7 @@ convert pp ranking</title>
         </td>
         <td>1661.36</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1846</td>
         <td class="user_name">
           <a href="users/7942196.html">kassia</a>
@@ -13079,7 +13080,7 @@ convert pp ranking</title>
         </td>
         <td>1647.97</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1850</td>
         <td class="user_name">
           <a href="users/3627340.html">Nephrite</a>
@@ -13135,7 +13136,7 @@ convert pp ranking</title>
         </td>
         <td>1578.47</td>
       </tr>
-      <tr class="Czech Republic">
+      <tr class="Czech_Republic">
         <td>1858</td>
         <td class="user_name">
           <a href="users/9000407.html">ShollowCZ</a>
@@ -13149,7 +13150,7 @@ convert pp ranking</title>
         </td>
         <td>1566.56</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1860</td>
         <td class="user_name">
           <a href="users/11135474.html">Jizzy</a>
@@ -13240,7 +13241,7 @@ convert pp ranking</title>
         </td>
         <td>1490.98</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1873</td>
         <td class="user_name">
           <a href="users/12715062.html">mahoneyaj7</a>
@@ -13310,14 +13311,14 @@ convert pp ranking</title>
         </td>
         <td>1457.55</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1883</td>
         <td class="user_name">
           <a href="users/11246834.html">Cnolii</a>
         </td>
         <td>1452.31</td>
       </tr>
-      <tr class="Dominican Republic">
+      <tr class="Dominican_Republic">
         <td>1884</td>
         <td class="user_name">
           <a href="users/5415435.html">Brend</a>
@@ -13331,7 +13332,7 @@ convert pp ranking</title>
         </td>
         <td>1444.53</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1886</td>
         <td class="user_name">
           <a href="users/10235347.html">-Jws</a>
@@ -13359,7 +13360,7 @@ convert pp ranking</title>
         </td>
         <td>1403.39</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1890</td>
         <td class="user_name">
           <a href="users/7928880.html">Cipse</a>
@@ -13387,7 +13388,7 @@ convert pp ranking</title>
         </td>
         <td>1387.61</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1894</td>
         <td class="user_name">
           <a href="users/24619884.html">chromatrope</a>
@@ -13408,7 +13409,7 @@ convert pp ranking</title>
         </td>
         <td>1338.19</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1897</td>
         <td class="user_name">
           <a href="users/9553853.html">Klice</a>
@@ -13429,7 +13430,7 @@ convert pp ranking</title>
         </td>
         <td>1298.09</td>
       </tr>
-      <tr class="United Arab Emirates">
+      <tr class="United_Arab_Emirates">
         <td>1900</td>
         <td class="user_name">
           <a href="users/28019595.html">HoneyButter69</a>
@@ -13450,7 +13451,7 @@ convert pp ranking</title>
         </td>
         <td>1254.33</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1903</td>
         <td class="user_name">
           <a href="users/3304713.html">transcendental</a>
@@ -13478,7 +13479,7 @@ convert pp ranking</title>
         </td>
         <td>1225.42</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1907</td>
         <td class="user_name">
           <a href="users/22708842.html">Katsue</a>
@@ -13492,7 +13493,7 @@ convert pp ranking</title>
         </td>
         <td>1215.59</td>
       </tr>
-      <tr class="New Zealand">
+      <tr class="New_Zealand">
         <td>1909</td>
         <td class="user_name">
           <a href="users/24345309.html">LegoBoyWelly</a>
@@ -13506,7 +13507,7 @@ convert pp ranking</title>
         </td>
         <td>1186.68</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1911</td>
         <td class="user_name">
           <a href="users/10454575.html">Zangoose</a>
@@ -13534,14 +13535,14 @@ convert pp ranking</title>
         </td>
         <td>1161.19</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1915</td>
         <td class="user_name">
           <a href="users/14783149.html">NotToGood</a>
         </td>
         <td>1159.78</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1916</td>
         <td class="user_name">
           <a href="users/850199.html">Captin[Murasa]</a>
@@ -13562,7 +13563,7 @@ convert pp ranking</title>
         </td>
         <td>1136.59</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1919</td>
         <td class="user_name">
           <a href="users/5441660.html">DevD</a>
@@ -13590,7 +13591,7 @@ convert pp ranking</title>
         </td>
         <td>1102.97</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1923</td>
         <td class="user_name">
           <a href="users/11712361.html">Leorant</a>
@@ -13604,7 +13605,7 @@ convert pp ranking</title>
         </td>
         <td>1079.69</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1925</td>
         <td class="user_name">
           <a href="users/1636577.html">TenyO</a>
@@ -13639,7 +13640,7 @@ convert pp ranking</title>
         </td>
         <td>1035.93</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1930</td>
         <td class="user_name">
           <a href="users/5534665.html">VisualCaTs</a>
@@ -13681,7 +13682,7 @@ convert pp ranking</title>
         </td>
         <td>965.07</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1936</td>
         <td class="user_name">
           <a href="users/4057177.html">shp</a>
@@ -13709,7 +13710,7 @@ convert pp ranking</title>
         </td>
         <td>923.01</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1940</td>
         <td class="user_name">
           <a href="users/1997633.html">Amamya</a>
@@ -13723,7 +13724,7 @@ convert pp ranking</title>
         </td>
         <td>901.34</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1942</td>
         <td class="user_name">
           <a href="users/15458667.html">QuintecX</a>
@@ -13758,14 +13759,14 @@ convert pp ranking</title>
         </td>
         <td>884.33</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1947</td>
         <td class="user_name">
           <a href="users/11198186.html">Dream Fire</a>
         </td>
         <td>874.54</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1948</td>
         <td class="user_name">
           <a href="users/10758286.html">Sweetooth</a>
@@ -13807,21 +13808,21 @@ convert pp ranking</title>
         </td>
         <td>806.01</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1954</td>
         <td class="user_name">
           <a href="users/6291741.html">BlackBN</a>
         </td>
         <td>798.57</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1955</td>
         <td class="user_name">
           <a href="users/14138063.html">Withdraw</a>
         </td>
         <td>796.73</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1956</td>
         <td class="user_name">
           <a href="users/16146652.html">Spanklie314</a>
@@ -13842,7 +13843,7 @@ convert pp ranking</title>
         </td>
         <td>756.49</td>
       </tr>
-      <tr class="South Korea">
+      <tr class="South_Korea">
         <td>1959</td>
         <td class="user_name">
           <a href="users/13135192.html">WitchRabbit</a>
@@ -13954,7 +13955,7 @@ convert pp ranking</title>
         </td>
         <td>646.11</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1975</td>
         <td class="user_name">
           <a href="users/6512678.html">hikiko-</a>
@@ -13996,7 +13997,7 @@ convert pp ranking</title>
         </td>
         <td>541.85</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1981</td>
         <td class="user_name">
           <a href="users/6443117.html">Usaha</a>
@@ -14080,21 +14081,21 @@ convert pp ranking</title>
         </td>
         <td>270.34</td>
       </tr>
-      <tr class="Hong Kong">
+      <tr class="Hong_Kong">
         <td>1993</td>
         <td class="user_name">
           <a href="users/17774343.html">seira_</a>
         </td>
         <td>253.22</td>
       </tr>
-      <tr class="United Kingdom">
+      <tr class="United_Kingdom">
         <td>1994</td>
         <td class="user_name">
           <a href="users/9407594.html">Danielstigman</a>
         </td>
         <td>223.64</td>
       </tr>
-      <tr class="United States">
+      <tr class="United_States">
         <td>1995</td>
         <td class="user_name">
           <a href="users/10103088.html">coffee hour</a>
@@ -14150,9 +14151,10 @@ convert pp ranking</title>
   $(() => {
     const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const resetTable = () => $("tr").removeClass('hide');
-    let isFiltered = false;
+    let isNameFiltered = false;
+    let isCountryFiltered = false;
     $("#user_search_button").on("click", () => {
-      if(isFiltered) {
+      if(isNameFiltered) {
         resetTable();
       }
       const search_text = $("#user_search_text").val();
@@ -14166,7 +14168,7 @@ convert pp ranking</title>
           user_parent.addClass('hide');
         }
       });
-      isFiltered = true;
+      isNameFiltered = true;
     });
 
     $("#reset").on("click", () => {
@@ -14176,6 +14178,9 @@ convert pp ranking</title>
     });
 
     $("#country_ranking").on("change", () => {
+      if (isCountryFiltered) {
+        resetTable();
+      }
       const selected_country = $("#country_ranking").val();
       if (selected_country === "all") {
         resetTable();
@@ -14188,6 +14193,7 @@ convert pp ranking</title>
             user_row.addClass('hide');
           }
         });
+        isCountryFiltered = true;
       }
     });
   });
