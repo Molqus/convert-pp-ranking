@@ -218,3 +218,7 @@ $RECYCLE.BIN/
 
 # user setting
 *.json
+*.pickle
+templates/
+*.py
+*.csv
